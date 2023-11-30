@@ -3,16 +3,16 @@
     <h1 class="hello">Hello</h1>
     <p class="who">I am Ruobing Shang.</p>
     <p class="introduction">
-      I am an software developer currently based in Suzhou.I am currently pursuing a master's degree in artificial
-      intelligence. My research interests are natural language processing, knowledge graph, LLM. If you're interested,
-      please contact me at shangruobing29@gmail.com.
+      I am a software developer currently based in Suzhou. Concurrently, I am pursuing a master's degree in artificial
+      intelligence. My research domain is Natural Language Processing (NLP), including Question-Answering, Knowledge
+      Graph and Large Language Model (LLM).
     </p>
     <p class="introduction">
-      🌱 I’m currently learning AI and full stack development. 👯 I’m looking to collaborate on development and
-      research. 🤔 I’m looking for help with Chatbot, Microservice and English. 💬 Ask me about Information Management
-      and Information System. 👍 I’m good at Python, Java and Typescript. 📫 How to reach me: shangruobing29@163.com
+      I’m currently studying algorithms, AI and full stack development. I’m good at Python, Java and Typescript. I
+      create websites with Vue.js and TypeScript, and develop backend systems with Spring and Java. Moreover, I use
+      Python to complete my research projects and make some convenient scripts. Over the past four years, I have learned
+      and mastered the following techniques:
     </p>
-    <p class="introduction">Over the past few years, I have learned and mastered the following techniques:</p>
     <div class="technologies">
       <div v-for="(technology, index) in technologies" :key="index" class="technology">
         {{ technology }}
@@ -34,34 +34,39 @@ const technologies = [
   'Django',
   'SQLite',
   'C/C++',
-  'nltk',
-  'spacy',
+  'Nltk',
+  'Spacy',
   'Neo4j',
-  'scikit-learn',
-  'numpy',
-  'pandas',
-  'tensorflow',
+  'Scikit-learn',
+  'Numpy',
+  'Pandas',
+  'Tensorflow',
   'Django REST framework',
   'HTML',
   'CSS',
   'JavaScript',
   'JQuery',
   'Vue.js',
+  'Vue Router',
+  'Vuex',
+  'Element Plus',
+  'Pinia',
+  'Scss',
   'TypeScript',
   'Springboot',
   'Redis',
   'RabbitMQ',
-  'pytorch',
-  'nginx',
-  'linux',
-  'spring-cloud',
-  'huggingface',
-  'Elastic search',
-  'uni-app',
-  'langchain',
-  'flask',
-  'shell',
-  'docker',
+  'Pytorch',
+  'Nginx',
+  'Linux',
+  'Spring Cloud',
+  'Huggingface',
+  'Elastic Search',
+  'Uni-app',
+  'Langchain',
+  'Flask',
+  'Shell',
+  'Docker',
   'Latex'
 ]
 </script>
@@ -69,10 +74,7 @@ const technologies = [
 <style scoped lang="scss">
 $technology-border: 1px solid #eaecef;
 .container {
-  padding: 60px;
-  // text-align: center;
-  // display: flex;
-  // flex-direction: column;
+  padding: 60px 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -82,55 +84,54 @@ $technology-border: 1px solid #eaecef;
 }
 
 .hello {
-  font-size: 60px;
   color: #303133;
+  font-size: 60px;
 }
 
 .who {
-  font-size: 30px;
-  font-weight: 600;
   color: #303133;
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .introduction {
-  font-size: 20px;
-  line-height: 30px;
-  font-family: 'Comic Sans MS';
   color: #606266;
+  font-size: 20px;
+  font-family: 'Comic Sans MS';
+  line-height: 30px;
+}
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('/src/fonts/Comic Sans MS.ttf');
 }
 
 .technologies {
-  // display: grid;
-  display: flex;
-  // grid-template-columns: repeat(7,1fr);
-  flex-wrap: wrap;
-  // border-top: $technology-border;
-  // border-left: $technology-border;
+  display: grid;
+  border-top: $technology-border;
+  border-left: $technology-border;
+  color: #606266;
   font-size: 14px;
   font-family: monospace;
-  // color: gray;
-  color: #606266;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
 }
 
 .technology {
-  height: 60px;
-  width: 100px;
-  border: $technology-border;
-  // border-bottom: $technology-border;
-  // background-color: red;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  height: 60px;
+  border-collapse: collapse;
+  border-right: $technology-border;
+  border-bottom: $technology-border;
   text-align: center;
-  // height: 100%;
-  // cursor: pointer;
 }
 
 .copyright {
   color: #909399;
-  font-size: 12px;
   text-align: center;
+  font-size: 12px;
+  margin-top: 22px;
 }
 </style>
