@@ -134,4 +134,24 @@ $technology-border: 1px solid #eaecef;
   font-size: 12px;
   margin-top: 22px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #343540;
+    color: white;
+  }
+
+  .hello,
+  .who {
+    color: #e6e8eb;
+  }
+
+  .introduction {
+    color: #ebedf0;
+  }
+  
+  .technologies {
+    color: #f0f2f5;
+  }
+}
 </style>
