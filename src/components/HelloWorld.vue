@@ -73,6 +73,7 @@ const technologies = [
 
 <style scoped lang="scss">
 $technology-border: 1px solid #eaecef;
+
 .container {
   padding: 60px 120px;
 }
@@ -94,16 +95,16 @@ $technology-border: 1px solid #eaecef;
   font-size: 30px;
 }
 
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('../fonts/Comic Sans MS.ttf');
+}
+
 .introduction {
   color: #606266;
   font-size: 20px;
   font-family: 'Comic Sans MS';
   line-height: 30px;
-}
-
-@font-face {
-  font-family: 'Comic Sans MS';
-  src: url('/src/fonts/Comic Sans MS.ttf');
 }
 
 .technologies {
@@ -136,11 +137,6 @@ $technology-border: 1px solid #eaecef;
 }
 
 @media (prefers-color-scheme: dark) {
-  .container {
-    background-color: #343540;
-    color: white;
-  }
-
   .hello,
   .who {
     color: #e6e8eb;
@@ -149,7 +145,7 @@ $technology-border: 1px solid #eaecef;
   .introduction {
     color: #ebedf0;
   }
-  
+
   .technologies {
     color: #f0f2f5;
   }
