@@ -1,0 +1,7 @@
+import{s as o,I as d,N as t,G as i,_ as a}from"./index-U8ylzn9J.js";class b{constructor(){this.angle=50,this.move=10}load(e){e&&(e.angle!==void 0&&(this.angle=o(e.angle)),e.move!==void 0&&(this.move=o(e.move)))}}class r{constructor(){this.distance=5,this.enable=!1,this.speed=new b}load(e){if(e&&(e.distance!==void 0&&(this.distance=o(e.distance)),e.enable!==void 0&&(this.enable=e.enable),e.speed!==void 0))if(d(e.speed))this.speed.load({angle:e.speed});else{const n=e.speed;n.min!==void 0?this.speed.load({angle:n}):this.speed.load(e.speed)}}}const f=2,u=Math.PI*f,c=360,g=10,p=0;class m{constructor(e){this.container=e}async init(e){const n=e.options.wobble;n!=null&&n.enable?e.wobble={angle:t()*u,angleSpeed:i(n.speed.angle)/c,moveSpeed:i(n.speed.move)/g}:e.wobble={angle:0,angleSpeed:0,moveSpeed:0},e.retina.wobbleDistance=i((n==null?void 0:n.distance)??p)*this.container.retina.pixelRatio,await Promise.resolve()}isEnabled(e){var n;return!e.destroyed&&!e.spawning&&!!((n=e.options.wobble)!=null&&n.enable)}loadOptions(e,...n){e.wobble||(e.wobble=new r);for(const s of n)e.wobble.load(s==null?void 0:s.wobble)}async update(e,n){if(!this.isEnabled(e))return;const{updateWobble:s}=await a(()=>import("./Utils--fKktztU.js"),__vite__mapDeps([0,1,2]));s(e,n)}}export{m as WobbleUpdater};
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/Utils--fKktztU.js","assets/index-U8ylzn9J.js","assets/index-JHUMKlkI.css"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}

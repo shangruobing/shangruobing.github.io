@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tsparticles/vue3": "^3.0.0",
+    "tsparticles": "^3.2.2",
     "vue": "^3.3.8"
   },
   "devDependencies": {
