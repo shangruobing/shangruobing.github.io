@@ -18,7 +18,7 @@
       I am eager to find like-minded software developers, to jointly explore the path of innovation and pursue technical
       excellence. In my view, teamwork and a shared vision are the keys to achieving outstanding projects. If you have
       any ideas, please contact me at
-      <a href="mailto:shangruobing@gmail.com" class="email">shangruobing@gmail.com</a>
+      <a href="mailto:shangruobing29@gmail.com" class="email">shangruobing29@gmail.com</a>
     </p>
     <!-- <div class="technologies">
       <div v-for="(technology, index) in technologies" :key="index" class="technology">
