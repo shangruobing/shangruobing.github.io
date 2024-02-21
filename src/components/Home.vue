@@ -26,11 +26,12 @@
       </div>
     </div> -->
     <p class="copyright">&copy; {{ new Date().getFullYear() }} Ruobing Shang. All rights reserved.</p>
-    <vue-particles id="tsparticles" :options="options" class="particles" />
   </div>
+  <!-- <vue-particles id="tsparticles" :options="options" class="particles" /> -->
 </template>
 
 <script setup lang="ts">
+// import { type ISourceOptions } from '@tsparticles/engine'
 // const technologies = [
 //   'Java',
 //   'SQL',
@@ -79,94 +80,94 @@
 // ]
 
 // 检测暗黑模式偏好
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+// const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
 
-const particlesColor = darkModeMediaQuery.matches ? '#ffffff' : '#2F3850'
+// const particlesColor = darkModeMediaQuery.matches ? '#ffffff' : '#2F3850'
 
-const options = {
-  autoplay: true,
-  // background: {
-  //   color: {
-  //     value: '#2F3850'
-  //   }
-  // },
-  fullScreen: {
-    enable: true,
-    zIndex: -1
-  },
-  fpsLimit: 120,
-  interactivity: {
-    events: {
-      onClick: {
-        enable: true,
-        mode: 'push'
-      },
-      onHover: {
-        enable: true,
-        mode: 'repulse'
-      }
-    },
-    modes: {
-      bubble: {
-        distance: 400,
-        duration: 2,
-        opacity: 0.8,
-        size: 40
-      },
-      push: {
-        quantity: 4
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4
-      }
-    }
-  },
-  particles: {
-    color: {
-      value: particlesColor
-    },
-    links: {
-      color: particlesColor,
-      distance: 150,
-      enable: true,
-      opacity: 0.5,
-      width: 1
-    },
-    move: {
-      direction: 'none',
-      enable: true,
-      outModes: 'bounce',
-      random: false,
-      speed: 6,
-      straight: false
-    },
-    number: {
-      density: {
-        enable: true
-      },
-      value: 80
-    },
-    opacity: {
-      value: 0.5
-    },
-    shape: {
-      type: 'circle'
-    },
-    size: {
-      value: { min: 1, max: 5 }
-    }
-  },
-  detectRetina: true
-}
+// const options: ISourceOptions = {
+// autoplay: true,
+// background: {
+//   color: {
+//     value: '#2F3850'
+//   }
+// },
+//   fullScreen: {
+//     enable: true,
+//     zIndex: -1
+//   },
+//   fpsLimit: 120,
+//   interactivity: {
+//     events: {
+//       onClick: {
+//         enable: true,
+//         mode: 'push'
+//       },
+//       onHover: {
+//         enable: true,
+//         mode: 'repulse'
+//       }
+//     },
+//     modes: {
+//       bubble: {
+//         distance: 400,
+//         duration: 2,
+//         opacity: 0.8,
+//         size: 40
+//       },
+//       push: {
+//         quantity: 4
+//       },
+//       repulse: {
+//         distance: 200,
+//         duration: 0.4
+//       }
+//     }
+//   },
+//   particles: {
+//     color: {
+//       value: particlesColor
+//     },
+//     links: {
+//       color: particlesColor,
+//       distance: 150,
+//       enable: true,
+//       opacity: 0.5,
+//       width: 1
+//     },
+//     move: {
+//       direction: 'none',
+//       enable: true,
+//       outModes: 'bounce',
+//       random: false,
+//       speed: 6,
+//       straight: false
+//     },
+//     number: {
+//       density: {
+//         enable: true
+//       },
+//       value: 80
+//     },
+//     opacity: {
+//       value: 0.5
+//     },
+//     shape: {
+//       type: 'circle'
+//     },
+//     size: {
+//       value: { min: 1, max: 5 }
+//     }
+//   },
+//   detectRetina: true
+// }
 </script>
 
 <style scoped lang="scss">
 $technology-border: 1px solid #eaecef;
 
 // .particles {
-// position: relative;
-// height: calc(100vh - 60px);
+//   position: fixed;
+//   height: calc(100vh - 60px);
 // }
 
 .container {
