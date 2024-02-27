@@ -256,4 +256,10 @@ $technology-border: 1px solid #eaecef;
     color: #f0f2f5;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .container {
+    padding: 100px 400px !important;
+  }
+}
 </style>
