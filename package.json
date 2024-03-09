@@ -9,11 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tsparticles/vue3": "^3.0.0",
-    "tsparticles": "^3.2.2",
+    "@tsparticles/vue3": "^3.0.1",
+    "tsparticles": "^3.3.0",
     "vue": "^3.3.8"
   },
   "devDependencies": {
+    "@types/node": "^20.11.25",
     "@vitejs/plugin-vue": "^4.5.0",
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
