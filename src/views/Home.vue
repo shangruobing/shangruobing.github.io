@@ -3,14 +3,16 @@
     <h1 class="hello">Hello</h1>
     <p class="who">I am Ruobing Shang.</p>
     <p class="introduction">
-      I am a software developer currently based in Suzhou. Concurrently, I am pursuing a master's degree in artificial
-      intelligence. My research domain is Natural Language Processing (NLP), including Question-Answering, Knowledge
-      Graph and Large Language Model (LLM).
+      I am a software developer currently based in Suzhou. Concurrently, I am pursuing a master's degree in Artificial
+      Intelligence. My research domain is Natural Language Processing (NLP), including Code Generation, Question
+      Answering, Knowledge Graph and Large Language Model (LLM).
     </p>
     <p class="introduction">
-      I’m currently studying algorithms, AI and full stack development. I’m good at Python, Java and Typescript. I
+      I’m currently studying AI and full stack development. I’m good at Python, Java and Typescript. I
       create websites with Vue.js and TypeScript, and develop backend systems with Spring and Java. Moreover, I use
-      Python to complete my research projects and make some convenient scripts.
+      Python to complete my research projects and make some convenient scripts. You’re welcome to explore my
+      repositories on
+      <a href="https://github.com/shangruobing" target="_blank" class="email">GitHub</a>.
     </p>
 
     <p class="introduction">
